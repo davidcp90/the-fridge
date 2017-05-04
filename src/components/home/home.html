@@ -1,9 +1,17 @@
-<div class="container">
-    <div class="row">
-        <div class="content col-md-4">
-            <h1><strong>Thank you for using <span class="text-primary package">{{package}}</span></strong></h1>
-            <p>This project is running in <strong class="mode">{{mode}} mode</strong></p>
-            <p>Make sure to follow the project on <a v-bind:href="repo">GitHub</a> to stay up to date with the latest releases, or contribute to the broject by opening an issue or making a pull-request!</p>
-        </div>
-    </div>
+<div id="home-container">
+  <md-layout md-align="center" md-gutter="24">
+    <md-layout :md-column="true" md-align="center" md-flex="15" class="mt-60">
+      <img src="./assets/img/fridge-logo.png" alt="logho" class="responsive-image">
+    </md-layout>
+    <md-layout :md-column="true" md-flex="40" class="mt-60">
+      <h1 class="md-display-4 white-text">The Fridge</h1>
+      <p class="md-headline white-text sans">Tired of trying to remember all the things that you have to do, but your current apps don't help. Follow mama's advice putting a note in <b>The Fridge</b>.</p>
+    </md-layout>
+  </md-layout>
+  <md-layout class="mt-60" md-align="center" md-gutter="24">
+    <md-button href="#/app" class="md-raised md-warn sans">Start Now</md-button>
+  </md-layout>
+  <md-layout class="mt-60" md-align="center" md-gutter="24">
+    <small class="white-text sans md-body-1">A practical exercise to learn Vue.js by <a href="http://github.com/davidcp90">David Camargo</a> based on <a href="https://scotch.io/tutorials/building-a-google-keep-clone-with-vue-and-firebase-pt-1">Scotch.io</a> idea.</small>
+  </md-layout>
 </div>

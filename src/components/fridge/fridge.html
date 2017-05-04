@@ -1,0 +1,23 @@
+<div id="fridge-wrapper">
+  <md-layout md-align="center" md-gutter="24">
+    <md-layout :md-column="true" md-align="center" md-flex="5">
+      <img src="./assets/img/fridge-logo.png" alt="logho" class="responsive-image">
+    </md-layout>
+    <md-layout :md-column="true" md-flex="20">
+      <h1 class="md-display-3 white-text">The Fridge</h1>
+    </md-layout>
+  </md-layout>
+  <md-layout class="mt-60" md-align="center" md-gutter="24">
+    <md-layout class="card-height" md-align="center" md-flex="25">
+      <md-layout>
+        <fridge-form v-on:create="createNote"></fridge-form>
+      </md-layout>
+    </md-layout>
+    <md-layout md-align="center" md-flex="65" md-gutter="16">
+      <md-layout v-if="notesList" v-for="(note, index) in notesList" :key="index" md-flex="33">
+        <fridge-note :class="{'note-card': index > 2}" :note="note"></fridge-note>
+      </md-layout>
+      <h2 v-else class="white-text md-display-2">The Fridge is empty. Why don't you put something here?</h2>
+    </md-layout>
+  </md-layout>
+</div>

@@ -1,6 +1,6 @@
-# the-fridge
+# The Fridge
 
-> Tired of trying to remember all the things that you have to do, but your current apps doesn't help. Follow mama's advice putting a note in *The Fridge*. The fridge was built using vue.js, firebase, etc
+> Tired of trying to remember all the things that you have to do, but your current apps don't help. Follow mama's advice putting a note in *The Fridge*. The fridge was built using vue.js, typescript, firebase, etc
 
 ## Build Setup
 

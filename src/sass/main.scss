@@ -1,5 +1,82 @@
-html, body, #app-main {
-    height: 100%;
+$indigo: #3F51B5;
+$yellow: #FFEB3B;
+@import url( 'https://fonts.googleapis.com/css?family=Indie+Flower | Source+Sans+Pro | Material+Icons');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
-@import '../components/home/home';
+#home-container {
+  height: 100vh;
+  background: $indigo;
+  overflow-y: scroll;
+}
+
+#fridge-wrapper {
+  height: 100vh;
+  background: $indigo;
+  overflow-y: scroll;
+}
+
+.white-text {
+  color: white !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.card-height {
+  max-height: 300px !important;
+  overflow-y: scroll;
+}
+
+.note-card {
+  margin-top: 16px;
+}
+
+.responsive-image {
+  width: 100%;
+  max-width: 100%;
+  max-height: auto !important;
+}
+
+.mt-60 {
+  margin-top: 60px !important;
+}
+
+* {
+  font-family: 'Indie Flower', cursive !important;
+}
+
+.sans {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.loader {
+  width: 64px !important;
+  margin: 50px auto;
+}
+
+.clearfix {
+  display: block;
+}
